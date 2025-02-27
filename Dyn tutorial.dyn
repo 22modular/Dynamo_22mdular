@@ -334,6 +334,55 @@
       ],
       "Replication": "Disabled",
       "Description": "Convert an array to a string representation."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..10;",
+      "Id": "2ebd7d60be8a4148bc1537c89ca862f4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ddd03c58cf414a22aed9e5777cabdcbb",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.FromObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "4d2ec762e03a403a9b518f71cc69245c",
+      "Inputs": [
+        {
+          "Id": "304d29e762c345ac8a11bd6c1d166159",
+          "Name": "obj",
+          "Description": "Object to be serialized",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ea13be2a66514e2cb439e14933e16b5e",
+          "Name": "str",
+          "Description": "Result of math computation",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Convert an object to a string representation."
     }
   ],
   "Connectors": [
@@ -381,6 +430,11 @@
       "Start": "8c8f2284c44a4fd89c92fcc13d9442d6",
       "End": "ab153805c6834d759361a63ab7068570",
       "Id": "748696865e6d461fb4049c6d896a3a1e"
+    },
+    {
+      "Start": "ddd03c58cf414a22aed9e5777cabdcbb",
+      "End": "304d29e762c345ac8a11bd6c1d166159",
+      "Id": "975f6b6f42024f6f96b1603604686843"
     }
   ],
   "Dependencies": [],
@@ -415,8 +469,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 207.43547631400202,
-        "Y": 152.79031886620436
+        "X": 203.02775680886475,
+        "Y": 160.13651804143302
       },
       {
         "ShowGeometry": true,
@@ -425,8 +479,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 421.41444955065776,
-        "Y": 146.396228006821
+        "X": 417.0067300455205,
+        "Y": 153.74242718204965
       },
       {
         "ShowGeometry": true,
@@ -435,8 +489,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 615.15803975201447,
-        "Y": 176.60851445721516
+        "X": 610.75032024687721,
+        "Y": 183.95471363244383
       },
       {
         "ShowGeometry": true,
@@ -445,8 +499,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 327.070220653739,
-        "Y": 293.97960968235975
+        "X": 322.66250114860173,
+        "Y": 301.32580885758841
       },
       {
         "ShowGeometry": true,
@@ -455,8 +509,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 324.581165204036,
-        "Y": 359.10164865037717
+        "X": 320.17344569889872,
+        "Y": 366.44784782560583
       },
       {
         "ShowGeometry": true,
@@ -465,8 +519,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 429.71963981647923,
-        "Y": 291.14425540990396
+        "X": 425.31192031134196,
+        "Y": 298.49045458513262
       },
       {
         "ShowGeometry": true,
@@ -475,8 +529,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 214.86221268345128,
-        "Y": 610.92704693319956
+        "X": 210.8668911243484,
+        "Y": 558.98786666486239
       },
       {
         "ShowGeometry": true,
@@ -485,8 +539,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 209.14007096300827,
-        "Y": 741.54952779587325
+        "X": 205.14474940390539,
+        "Y": 689.61034752753608
       },
       {
         "ShowGeometry": true,
@@ -495,8 +549,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 212.57930462493914,
-        "Y": 675.95239972174238
+        "X": 208.58398306583626,
+        "Y": 624.0132194534051
       },
       {
         "ShowGeometry": true,
@@ -505,8 +559,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 337.3371951153191,
-        "Y": 637.70419807524854
+        "X": 333.34187355621623,
+        "Y": 585.76501780691137
       },
       {
         "ShowGeometry": true,
@@ -515,8 +569,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 209.71503456774894,
-        "Y": 971.99868950643906
+        "X": 203.72205222909452,
+        "Y": 884.10161520617589
       },
       {
         "ShowGeometry": true,
@@ -525,8 +579,28 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 350.85713094248604,
-        "Y": 967.19311813459285
+        "X": 344.86414860383161,
+        "Y": 879.29604383432979
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "2ebd7d60be8a4148bc1537c89ca862f4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 204.33588065616004,
+        "Y": 1060.7605869899128
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String from Object",
+        "Id": "4d2ec762e03a403a9b518f71cc69245c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 406.50211420745489,
+        "Y": 1050.9186913668727
       }
     ],
     "Annotations": [
@@ -541,13 +615,13 @@
           "718236fbf89d40d7875c1c5a46dbc318",
           "d1f7335adbc94346a4be432684d40a0b"
         ],
-        "Left": 197.43547631400202,
-        "Top": 93.396228006820991,
+        "Left": 193.02775680886475,
+        "Top": 100.74242718204965,
         "Width": 608.72256343801246,
         "Height": 333.70542064355618,
         "FontSize": 36.0,
-        "InitialTop": 146.396228006821,
-        "InitialHeight": 310.70542064355618,
+        "InitialTop": 153.74242718204965,
+        "InitialHeight": 357.70542064355618,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       },
@@ -560,13 +634,13 @@
           "6b0fb389ad94484b8ec2ed13e69b878e",
           "de9d208e25c44fb3975cd7c9f84bf2ab"
         ],
-        "Left": 199.14007096300827,
-        "Top": 557.92704693319956,
+        "Left": 195.14474940390539,
+        "Top": 505.98786666486239,
         "Width": 346.19712415231083,
         "Height": 251.62248086267368,
         "FontSize": 36.0,
-        "InitialTop": 610.92704693319956,
-        "InitialHeight": 228.62248086267368,
+        "InitialTop": 558.98786666486239,
+        "InitialHeight": 275.62248086267368,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       },
@@ -577,13 +651,30 @@
           "82f4c406201b451da1ab702c2c698d96",
           "88bacac930574e0ebfd0e9408ba9d0d8"
         ],
-        "Left": 199.71503456774894,
-        "Top": 914.19311813459285,
+        "Left": 193.72205222909452,
+        "Top": 826.29604383432979,
         "Width": 280.14209637473709,
-        "Height": 150.80557137184621,
+        "Height": 150.8055713718461,
         "FontSize": 36.0,
-        "InitialTop": 967.19311813459285,
-        "InitialHeight": 127.80557137184621,
+        "InitialTop": 879.29604383432979,
+        "InitialHeight": 149.80557137184621,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "b98c56cf33534bb4803064718a5f0185",
+        "Title": "String from Object",
+        "Nodes": [
+          "2ebd7d60be8a4148bc1537c89ca862f4",
+          "4d2ec762e03a403a9b518f71cc69245c"
+        ],
+        "Left": 194.33588065616004,
+        "Top": 997.91869136687274,
+        "Width": 347.16623355129485,
+        "Height": 155.84189562304005,
+        "FontSize": 36.0,
+        "InitialTop": 1050.9186913668727,
+        "InitialHeight": 126.56741824318237,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       },
@@ -591,8 +682,8 @@
         "Id": "0cb2907cc2c44001a1150055eda78907",
         "Title": "Ví dụ về String.Concat - dùng để kết hợp nhiều string thành một",
         "Nodes": [],
-        "Left": 195.19870601784265,
-        "Top": 35.478749685650712,
+        "Left": 192.26022634775114,
+        "Top": 47.23266836601664,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -605,8 +696,8 @@
         "Id": "27fedec2478c4d029d89acfb5d250a62",
         "Title": "Ví dụ về String.Join trong trường hợp  2 chuỗi viết liền thay vào đó có thể sử dụng String.Join",
         "Nodes": [],
-        "Left": 198.728610226115,
-        "Top": 496.5221488807162,
+        "Left": 194.73328866701212,
+        "Top": 444.582968612379,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -619,8 +710,8 @@
         "Id": "9dce1f9461624a618a0070feb2b5d9de",
         "Title": "Note:\r\n- Separator phải hợp lệ. Dùng các ký tự tách như \",\"  \"-\" ...\r\n- String phải là danh sách - Không nhận chuỗi đơn lẻ.\r\n- Số phải chuyển thành chuỗi trước khi đưa vào ( Có thể dùng StringFromObject như bên trên ).\r\n- Xử lý danh sách lồng nhau - nested lists (Sử dụng List.Flatten trước khi nối).",
         "Nodes": [],
-        "Left": 557.529324773629,
-        "Top": 556.85198556515945,
+        "Left": 553.53400321452614,
+        "Top": 504.91280529682223,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -633,8 +724,8 @@
         "Id": "200f0a86e35545d9bf500c517d670535",
         "Title": "Nested Lists\r\n🔹 Tại sao cần Nested Lists trong Dynamo?\n- Giúp quản lý dữ liệu có cấu trúc phức tạp, như danh sách các điểm trong nhiều đường, danh sách các tường trong nhiều cấp, v.v.\n- Hỗ trợ lặp qua từng nhóm dữ liệu một cách hiệu quả.\n- Giúp thao tác với dữ liệu dễ dàng hơn trong các thuật toán thiết kế tham số.\r\n🔹 Cách làm việc với Nested Lists trong Dynamo\n- Tạo Nested Lists\n- Dùng List.Create để tạo danh sách chính.\n- Dùng List.AddItemToEnd hoặc List.AddItemToFront để thêm danh sách con vào danh sách chính.\n- Hoặc dùng List.GroupByKey để nhóm các phần tử lại thành danh sách con.\n- Truy cập phần tử trong Nested Lists\n- Dùng List.GetItemAtIndex để lấy danh sách con theo chỉ mục.\n- Dùng List.Flatten để chuyển danh sách lồng nhau thành danh sách phẳng.\n- Duyệt qua Nested Lists\n- Dùng List.Map hoặc List.Combine để áp dụng một hàm lên từng danh sách con.\n- Dùng Lacing (Shortest, Longest, Cross Product) để kiểm soát cách Dynamo lặp qua danh sách.\n🔹 Ví dụ thực tế trong Revit\n- Lấy danh sách các tường theo từng cấp độ (Level).\n- Nhóm các cột theo từng Grid.\n- Tạo lưới điểm cho các mô hình tham số.",
         "Nodes": [],
-        "Left": 857.77753740683329,
-        "Top": 556.30987570276307,
+        "Left": 853.78221584773041,
+        "Top": 504.37069543442584,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -647,8 +738,8 @@
         "Id": "e3ac49af450340f9943e97e123037241",
         "Title": "String from Array sử dụng để chuyển 1 dánh sách String thành 1 chuỗi String duy nhất",
         "Nodes": [],
-        "Left": 199.77904941947008,
-        "Top": 860.59771171634441,
+        "Left": 193.78606708081566,
+        "Top": 772.70063741608124,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -659,10 +750,24 @@
       },
       {
         "Id": "22bd9228c6524dedaeb0ae18cf05e746",
-        "Title": "Note:\r\n- Không tự động thêm dấu phân cách",
+        "Title": "Note:\r\n- Không tự động thêm dấu phân cách, các phần tử bị ghép liền nhau.\r\n- Không nhận giá trị đơn lẻ.\r\n- Có thể bị lỗi khi dùng Nested Lists.\r\n- Số cần được chuyển thành chuỗi (sử dụng String from Object).",
         "Nodes": [],
-        "Left": 501.53658393772469,
-        "Top": 860.0647536352684,
+        "Left": 495.54360159907026,
+        "Top": 772.16767933500523,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "5f6fb7126bf4460da773f2573ab2bf01",
+        "Title": "Note:\r\n- Chuyển đổi moi dữ liệu thành chuỗi (Số, danh sách, boolean, đối tượng revit có thể chuyển thành chuỗi )\r\n- Danh sách nối liền nhau(\"1234..\" hay\"1,2,3,4,...\")\r\n- Đối tượng revit có thể không hiển thị đúng thông tin(kết quả chỉ có thể trả về là       ID        hoặc        tên kiểu đối tượng      -    dùng Element.GetParameterValueByName để lấy dữ liệu cụ thể).\r\n- Không thể định dạng số hoặc chuỗi đầu ra (là những số không tự động làm tròn hoặc thêm định dạng    -     có thể dùng String.Format(\"{0:0.00}\",List) để định dạng số)\r\n- Nếu đầu vào là null, có thể trả về chuỗi rỗng (Kiểm tra trước với Objcet.IsNull)",
+        "Nodes": [],
+        "Left": 557.05929797370993,
+        "Top": 999.41384322181125,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -672,8 +777,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -50.209446648234291,
-    "Y": -512.22538597712128,
-    "Zoom": 1.0139117928601014
+    "X": 123.59392303929667,
+    "Y": 111.07988669796396,
+    "Zoom": 0.6806240724945154
   }
 }
