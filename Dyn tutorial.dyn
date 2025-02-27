@@ -1,0 +1,679 @@
+{
+  "Uuid": "8c244476-0897-4144-8c31-681b84bfcec9",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Dyn tutorial",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..10;",
+      "Id": "3ddc7adf279f418fa56fce0603790591",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "61f28597e49f4ca395ea60162f67d201",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.FromObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "be78afc8cda74c5ba62761fd11256dc3",
+      "Inputs": [
+        {
+          "Id": "e248bdf0bec2404081fb3c620dd9f6dc",
+          "Name": "obj",
+          "Description": "Object to be serialized",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b55aac94bafb4420bd6537a649d33204",
+          "Name": "str",
+          "Description": "Result of math computation",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Convert an object to a string representation."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction, DynamoCore",
+      "FunctionSignature": "DSCore.String.Concat@string[]",
+      "FunctionType": "VariableArgument",
+      "NodeType": "FunctionNode",
+      "Id": "fa8e3755d2fc4680a7f327ee16511f13",
+      "Inputs": [
+        {
+          "Id": "e590a3a6a75b4985a7c0e2bc2b80e606",
+          "Name": "string0",
+          "Description": "List of strings to concatenate.\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "026ce2d1f4a746ea9d39eeb1a30c565a",
+          "Name": "string1",
+          "Description": "string[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c59ae27634a0406eafb23dc923ea5119",
+          "Name": "str",
+          "Description": "String made from list of strings.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Concatenates multiple strings into a single string.\n\nString.Concat (strings: string[]): string"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "Hello",
+      "Id": "359ec487ca464e22ad2bbb73fca84c2f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ef2f20fd81694d9795e8580a67c7ce13",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "World",
+      "Id": "718236fbf89d40d7875c1c5a46dbc318",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "788a93685f5248b495bb1652fc9b8453",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "d1f7335adbc94346a4be432684d40a0b",
+      "Inputs": [
+        {
+          "Id": "70b6587d809641799bac9e76b33a240c",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "463d2efb7fed4ad19e03d5f3ecda5567",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bdd656f60e374da482d93c840f62b0b9",
+          "Name": "list",
+          "Description": "A list",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list out of the given inputs"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": ".",
+      "Id": "e01cd876600a4a8e896a9627715a8e77",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e799eb4c9a67417aabc8dae34aa5cfd8",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "World",
+      "Id": "8a8f80dc346b4f3a96a8f5557823c985",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3750689a4c884ffa863600ea97a11ea5",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "Hello",
+      "Id": "6b0fb389ad94484b8ec2ed13e69b878e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d9738ef5d71546639daa83b0102401b8",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSVarArgFunction, DynamoCore",
+      "FunctionSignature": "DSCore.String.Join@string,string[]",
+      "FunctionType": "VariableArgument",
+      "NodeType": "FunctionNode",
+      "Id": "de9d208e25c44fb3975cd7c9f84bf2ab",
+      "Inputs": [
+        {
+          "Id": "c4aaecee81d14aaca142ffa9c58b5535",
+          "Name": "separator",
+          "Description": "String to be inserted between joined strings.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9fdb37abd70c49fba1c59c1010dd25dc",
+          "Name": "string0",
+          "Description": "Strings to be joined into a single string.\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3d5506cc8c48493888464cdf81820fe2",
+          "Name": "string1",
+          "Description": "string[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0ce41fd4894343ac8b4780abbcb4e902",
+          "Name": "str",
+          "Description": "A string made from the list of strings including the separator character.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Concatenates multiple strings into a single string, inserting the given separator between each joined string.\n\nString.Join (separator: string, strings: string[]): string"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "1..10;",
+      "Id": "82f4c406201b451da1ab702c2c698d96",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8c8f2284c44a4fd89c92fcc13d9442d6",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.FromArray, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "88bacac930574e0ebfd0e9408ba9d0d8",
+      "Inputs": [
+        {
+          "Id": "ab153805c6834d759361a63ab7068570",
+          "Name": "arr",
+          "Description": "The array of object to be serialized",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "35d678f5dadb4ecf8aa2d4b99347dd3f",
+          "Name": "str",
+          "Description": "String representation of the array",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Convert an array to a string representation."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "61f28597e49f4ca395ea60162f67d201",
+      "End": "e248bdf0bec2404081fb3c620dd9f6dc",
+      "Id": "244a6dfe75c84f39b27cbb4f25b8bcb9"
+    },
+    {
+      "Start": "b55aac94bafb4420bd6537a649d33204",
+      "End": "e590a3a6a75b4985a7c0e2bc2b80e606",
+      "Id": "1d875f1e326f4090b3f654bc082f21ec"
+    },
+    {
+      "Start": "ef2f20fd81694d9795e8580a67c7ce13",
+      "End": "70b6587d809641799bac9e76b33a240c",
+      "Id": "2bd5f5cdb4b54c16990294639e8b812b"
+    },
+    {
+      "Start": "788a93685f5248b495bb1652fc9b8453",
+      "End": "463d2efb7fed4ad19e03d5f3ecda5567",
+      "Id": "8007ae221c644280bbba4fc055f19d88"
+    },
+    {
+      "Start": "bdd656f60e374da482d93c840f62b0b9",
+      "End": "026ce2d1f4a746ea9d39eeb1a30c565a",
+      "Id": "d618898649074b4f8cf8162d7f5a04b3"
+    },
+    {
+      "Start": "e799eb4c9a67417aabc8dae34aa5cfd8",
+      "End": "c4aaecee81d14aaca142ffa9c58b5535",
+      "Id": "94994416a1c145f18c82fa216f76a01e"
+    },
+    {
+      "Start": "3750689a4c884ffa863600ea97a11ea5",
+      "End": "3d5506cc8c48493888464cdf81820fe2",
+      "Id": "6569eee78738442aad4f6e5b35a85ae1"
+    },
+    {
+      "Start": "d9738ef5d71546639daa83b0102401b8",
+      "End": "9fdb37abd70c49fba1c59c1010dd25dc",
+      "Id": "3b93941611264983b05ab76ef66bd6d4"
+    },
+    {
+      "Start": "8c8f2284c44a4fd89c92fcc13d9442d6",
+      "End": "ab153805c6834d759361a63ab7068570",
+      "Id": "748696865e6d461fb4049c6d896a3a1e"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.5.0.7460",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "3ddc7adf279f418fa56fce0603790591",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 207.43547631400202,
+        "Y": 152.79031886620436
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String from Object",
+        "Id": "be78afc8cda74c5ba62761fd11256dc3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 421.41444955065776,
+        "Y": 146.396228006821
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String.Concat",
+        "Id": "fa8e3755d2fc4680a7f327ee16511f13",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 615.15803975201447,
+        "Y": 176.60851445721516
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "359ec487ca464e22ad2bbb73fca84c2f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 327.070220653739,
+        "Y": 293.97960968235975
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "718236fbf89d40d7875c1c5a46dbc318",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 324.581165204036,
+        "Y": 359.10164865037717
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List Create",
+        "Id": "d1f7335adbc94346a4be432684d40a0b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 429.71963981647923,
+        "Y": 291.14425540990396
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "e01cd876600a4a8e896a9627715a8e77",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 214.86221268345128,
+        "Y": 610.92704693319956
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "8a8f80dc346b4f3a96a8f5557823c985",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 209.14007096300827,
+        "Y": 741.54952779587325
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "6b0fb389ad94484b8ec2ed13e69b878e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 212.57930462493914,
+        "Y": 675.95239972174238
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String.Join",
+        "Id": "de9d208e25c44fb3975cd7c9f84bf2ab",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 337.3371951153191,
+        "Y": 637.70419807524854
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "82f4c406201b451da1ab702c2c698d96",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 209.71503456774894,
+        "Y": 971.99868950643906
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String from Array",
+        "Id": "88bacac930574e0ebfd0e9408ba9d0d8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 350.85713094248604,
+        "Y": 967.19311813459285
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "bbffd15718684c2ca77fd27740b1386b",
+        "Title": "String.Concat",
+        "Nodes": [
+          "3ddc7adf279f418fa56fce0603790591",
+          "be78afc8cda74c5ba62761fd11256dc3",
+          "fa8e3755d2fc4680a7f327ee16511f13",
+          "359ec487ca464e22ad2bbb73fca84c2f",
+          "718236fbf89d40d7875c1c5a46dbc318",
+          "d1f7335adbc94346a4be432684d40a0b"
+        ],
+        "Left": 197.43547631400202,
+        "Top": 93.396228006820991,
+        "Width": 608.72256343801246,
+        "Height": 333.70542064355618,
+        "FontSize": 36.0,
+        "InitialTop": 146.396228006821,
+        "InitialHeight": 310.70542064355618,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c47f2d54307340f3b57fb091e9bc1779",
+        "Title": "String.Join",
+        "Nodes": [
+          "e01cd876600a4a8e896a9627715a8e77",
+          "8a8f80dc346b4f3a96a8f5557823c985",
+          "6b0fb389ad94484b8ec2ed13e69b878e",
+          "de9d208e25c44fb3975cd7c9f84bf2ab"
+        ],
+        "Left": 199.14007096300827,
+        "Top": 557.92704693319956,
+        "Width": 346.19712415231083,
+        "Height": 251.62248086267368,
+        "FontSize": 36.0,
+        "InitialTop": 610.92704693319956,
+        "InitialHeight": 228.62248086267368,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "7902cd5779814451a87e81ebb2a0ad20",
+        "Title": "String from Array",
+        "Nodes": [
+          "82f4c406201b451da1ab702c2c698d96",
+          "88bacac930574e0ebfd0e9408ba9d0d8"
+        ],
+        "Left": 199.71503456774894,
+        "Top": 914.19311813459285,
+        "Width": 280.14209637473709,
+        "Height": 150.80557137184621,
+        "FontSize": 36.0,
+        "InitialTop": 967.19311813459285,
+        "InitialHeight": 127.80557137184621,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "0cb2907cc2c44001a1150055eda78907",
+        "Title": "Ví dụ về String.Concat - dùng để kết hợp nhiều string thành một",
+        "Nodes": [],
+        "Left": 195.19870601784265,
+        "Top": 35.478749685650712,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "27fedec2478c4d029d89acfb5d250a62",
+        "Title": "Ví dụ về String.Join trong trường hợp  2 chuỗi viết liền thay vào đó có thể sử dụng String.Join",
+        "Nodes": [],
+        "Left": 198.728610226115,
+        "Top": 496.5221488807162,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "9dce1f9461624a618a0070feb2b5d9de",
+        "Title": "Note:\r\n- Separator phải hợp lệ. Dùng các ký tự tách như \",\"  \"-\" ...\r\n- String phải là danh sách - Không nhận chuỗi đơn lẻ.\r\n- Số phải chuyển thành chuỗi trước khi đưa vào ( Có thể dùng StringFromObject như bên trên ).\r\n- Xử lý danh sách lồng nhau - nested lists (Sử dụng List.Flatten trước khi nối).",
+        "Nodes": [],
+        "Left": 557.529324773629,
+        "Top": 556.85198556515945,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "200f0a86e35545d9bf500c517d670535",
+        "Title": "Nested Lists\r\n🔹 Tại sao cần Nested Lists trong Dynamo?\n- Giúp quản lý dữ liệu có cấu trúc phức tạp, như danh sách các điểm trong nhiều đường, danh sách các tường trong nhiều cấp, v.v.\n- Hỗ trợ lặp qua từng nhóm dữ liệu một cách hiệu quả.\n- Giúp thao tác với dữ liệu dễ dàng hơn trong các thuật toán thiết kế tham số.\r\n🔹 Cách làm việc với Nested Lists trong Dynamo\n- Tạo Nested Lists\n- Dùng List.Create để tạo danh sách chính.\n- Dùng List.AddItemToEnd hoặc List.AddItemToFront để thêm danh sách con vào danh sách chính.\n- Hoặc dùng List.GroupByKey để nhóm các phần tử lại thành danh sách con.\n- Truy cập phần tử trong Nested Lists\n- Dùng List.GetItemAtIndex để lấy danh sách con theo chỉ mục.\n- Dùng List.Flatten để chuyển danh sách lồng nhau thành danh sách phẳng.\n- Duyệt qua Nested Lists\n- Dùng List.Map hoặc List.Combine để áp dụng một hàm lên từng danh sách con.\n- Dùng Lacing (Shortest, Longest, Cross Product) để kiểm soát cách Dynamo lặp qua danh sách.\n🔹 Ví dụ thực tế trong Revit\n- Lấy danh sách các tường theo từng cấp độ (Level).\n- Nhóm các cột theo từng Grid.\n- Tạo lưới điểm cho các mô hình tham số.",
+        "Nodes": [],
+        "Left": 857.77753740683329,
+        "Top": 556.30987570276307,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e3ac49af450340f9943e97e123037241",
+        "Title": "String from Array sử dụng để chuyển 1 dánh sách String thành 1 chuỗi String duy nhất",
+        "Nodes": [],
+        "Left": 199.77904941947008,
+        "Top": 860.59771171634441,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "22bd9228c6524dedaeb0ae18cf05e746",
+        "Title": "Note:\r\n- Không tự động thêm dấu phân cách",
+        "Nodes": [],
+        "Left": 501.53658393772469,
+        "Top": 860.0647536352684,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -50.209446648234291,
+    "Y": -512.22538597712128,
+    "Zoom": 1.0139117928601014
+  }
+}
